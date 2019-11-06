@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//ShowController.php
+Route::resource('shows','ShowController');
