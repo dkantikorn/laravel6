@@ -16,5 +16,7 @@ Route::get('/', function () {
 });
 
 
-//ShowController.php
 Route::resource('shows','ShowController');
+Route::get('/{any}', function () {
+    return view('post/post');
+  })->where('any', '.*');
