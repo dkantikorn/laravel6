@@ -21,7 +21,7 @@ import EditComponent from "./components/EditComponent.vue";
 const routes = [
     {
         name: "home",
-        path: "/",
+        path: "/home",
         component: HomeComponent
     },
     {
