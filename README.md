@@ -54,6 +54,8 @@ $ composer create-project --prefer-dist laravel/laravel vuelaravelcrud
 
 
 ## SNAPSHORT
-<img src="./public/img/snapshort/list-post.png" alt="List for all post" width="450px">
-<img src="./public/img/snapshort/create-post.png" alt="Create post" width="450px">
-<img src="./public/img/snapshort/update-post.png" alt="Update post" width="450px">
+<img src="./public/img/snapshort/list-post.png" alt="List for all post">
+<br>
+<img src="./public/img/snapshort/create-post.png" alt="Create post">
+<br/>
+<img src="./public/img/snapshort/edit-post.png" alt="Update post">
