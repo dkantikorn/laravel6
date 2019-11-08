@@ -4,6 +4,8 @@ Simple application with Laravel 6.x CRUD with Vue.js
 ## Tale of contents
 - [Installation](#installation)
 - [Setting up for V-Host](#setting-up-for-v-host)
+- [Host File](#host-file)
+- [Snap Short](#snapshort)
 
 ## Installation
 
@@ -52,4 +54,6 @@ $ composer create-project --prefer-dist laravel/laravel vuelaravelcrud
 
 
 ## SNAPSHORT
-<img src="./public/img/snapshort/list-post.png" alt="List for all post">
+<img src="./public/img/snapshort/list-post.png" alt="List for all post" width="450px">
+<img src="./public/img/snapshort/create-post.png" alt="Create post" width="450px">
+<img src="./public/img/snapshort/update-post.png" alt="Update post" width="450px">
