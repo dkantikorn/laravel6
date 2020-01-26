@@ -2082,16 +2082,22 @@ __webpack_require__.r(__webpack_exports__);
     var uri = 'http://demo.laravel6.crud.local/api/posts';
     this.axios.get(uri).then(function (response) {
       _this.posts = response.data.data;
+    })["catch"](function (error) {
+      alert("Could not load for the Post list. Please try again!");
     });
   },
   methods: {
     deletePost: function deletePost(id) {
       var _this2 = this;
 
-      var uri = "http://demo.laravel6.crud.local/api/post/delete/".concat(id);
-      this.axios["delete"](uri).then(function (response) {
-        _this2.posts.splice(_this2.posts.indexOf(id), 1);
-      });
+      if (confirm("Do you really want to delete it?")) {
+        var uri = "http://demo.laravel6.crud.local/api/post/delete/".concat(id);
+        this.axios["delete"](uri).then(function (response) {
+          _this2.posts.splice(_this2.posts.indexOf(id), 1);
+        })["catch"](function (error) {
+          alert("Could not delete for the post");
+        });
+      }
     }
   }
 });
@@ -2110,7 +2116,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "\n.fade-enter-active, .fade-leave-active {\n  -webkit-transition: opacity .5s;\n  transition: opacity .5s\n}\n.fade-enter, .fade-leave-active {\n  opacity: 0\n}\n", ""]);
+exports.push([module.i, "\n.fade-enter-active, .fade-leave-active {\n    -webkit-transition: opacity .5s;\n    transition: opacity .5s\n}\n.fade-enter, .fade-leave-active {\n    opacity: 0\n}\n", ""]);
 
 // exports
 

@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/public/index.php</file>
-            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/.env</file>
-            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/config/app.php</file>
-            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/resources/views/welcome.blade.php</file>
-            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/config/database.php</file>
+            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/resources/js/app.js</file>
+            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/resources/views/post/post.blade.php</file>
+            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/routes/web.php</file>
+            <file>file:/D:/xampp_7_3_9/htdocs/DEMO_LARAVEL6_CRUD/resources/js/components/HomeComponent.vue</file>
         </group>
     </open-files>
 </project-private>

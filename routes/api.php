@@ -19,9 +19,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-//Post Laravel andVue.js Example
+//Post Laravel and Vue.js Example
 Route::post('/post/create', 'PostController@store');
 Route::get('/post/edit/{id}', 'PostController@edit');
 Route::post('/post/update/{id}', 'PostController@update');
 Route::delete('/post/delete/{id}', 'PostController@delete');
 Route::get('/posts', 'PostController@index');
+
+
+//Route::group(['prefix' => '/v1', 'namespace' => 'Api\V1', 'as' => 'api.'], function () {
+//    Route::resource('companies', 'CompaniesController', ['except' => ['create', 'edit']]);
+//});

@@ -6,48 +6,48 @@ use Illuminate\Http\Request;
 use App\Http\Resources\PostCollection;
 use App\Post;
 
-class PostController extends Controller
-{
-    public function store(Request $request)
-    {
-      $post = new Post([
-        'title' => $request->get('title'),
-        'body' => $request->get('body')
-      ]);
+class PostController extends Controller {
 
-      $post->save();
+    public function store(Request $request) {
+        $request->validate([
+            'title' => 'required|max:255',
+            'body' => 'required'
+        ]);
+        $post = new Post([
+            'title' => $request->get('title'),
+            'body' => $request->get('body')
+        ]);
 
-      return response()->json('successfully added');
+        $post->save();
+
+        return response()->json('successfully added');
     }
 
-
-    public function index()
-    {
-      return new PostCollection(Post::all());
+    public function index() {
+        //return response(Post::all()->jsonSerialize(), Response::HTTP_OK);
+        return new PostCollection(Post::all());
     }
 
-    public function edit($id)
-    {
-      $post = Post::find($id);
-      return response()->json($post);
+    public function edit($id) {
+        $post = Post::find($id);
+        return response()->json($post);
     }
 
-    public function update($id, Request $request)
-    {
-      $post = Post::find($id);
+    public function update($id, Request $request) {
+        $post = Post::find($id);
 
-      $post->update($request->all());
+        $post->update($request->all());
 
-      return response()->json('successfully updated');
+        return response()->json('successfully updated');
     }
 
-    public function delete($id)
-    {
-      $post = Post::find($id);
+    public function delete($id) {
+        $post = Post::find($id);
 
-      $post->delete();
+        $post->delete();
 
-      return response()->json('successfully deleted');
+
+        return response()->json('successfully deleted');
     }
 
 }

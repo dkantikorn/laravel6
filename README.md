@@ -22,6 +22,28 @@ $ laravel new vuelaravelcrud
 $ composer create-project --prefer-dist laravel/laravel vuelaravelcrud
 ```
 
+$ cd vuelaravelcrud
+$ code .
+
+## Install Node package with package.json file
+
+```bash
+$ npm install
+$ npm install vue-router vue-axios juery popper.js bootstrap --save
+```
+
+## Run Vue.js Project
+
+```bash
+$ npm run dev
+$ npm run watch
+```
+
+$ php artisan make:controller PostController [--resource]
+$ php artisan make:model Post [-m]
+$ php artisan make:resource PostCollection
+$ php artisan migrate
+
 
 ## SETTING UP FOR V-HOST
 
